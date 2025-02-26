@@ -17,3 +17,33 @@
 ```bash
 cat <Alt + .>
 ```
+
+## Other Bash Shortcuts
+
+1. Print the Current PID of the current shell
+
+```bash
+echo $$
+```
+
+2. Print the **PID** of the most recently executed background job\*\*
+
+```bash
+echo $!
+```
+
+2. Command History Shortcuts\*\*
+
+- `!n` → Run command number **n** from history
+
+  ```bash
+  !25
+  ```
+
+- `!string` → Run the most recent command **starting with string**
+
+  ```bash
+  !echo
+  ```
+
+  - Runs the last command that started with `echo`.
