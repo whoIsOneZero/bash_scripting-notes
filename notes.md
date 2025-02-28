@@ -101,4 +101,3 @@ In Linux (globbing patterns), wildcards are special characters that help you mat
    `bash
 touch file_$(date +%Y-%m-%d).txt
 `
-   f
