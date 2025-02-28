@@ -101,3 +101,11 @@ In Linux (globbing patterns), wildcards are special characters that help you mat
    `bash
 touch file_$(date +%Y-%m-%d).txt
 `
+
+## Where to store scripts
+
+Best Practices
+
+- Personal scripts: `~/bin/`
+- System-wide scripts: `/usr/local/bin/`
+- Admin scripts: `/usr/local/sbin/`
