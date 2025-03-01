@@ -4,15 +4,15 @@
 
 Markdown files can be easily viewed in several ways. Below are some simple options:
 
-### 1️. **Using a Web Browser**
+### 1 **Using a Web Browser**
 
 - **GitHub**: Simply view the `.md` on GitHub - shows you the preview
   
-### 2. **VS Code**
+### 2 **VS Code**
   - Open the `.md` file in VS Code, then click **View > Open Preview**.
   - Open the .md file in Visual Studio Code and press `Ctrl + Shift + V` to toggle preview mode.
 
-### 3️. **Using Command Line Tools**
+### 3 **Using Command Line Tools**
 
 - **`glow` (Terminal Markdown Viewer)**:
   ```bash
