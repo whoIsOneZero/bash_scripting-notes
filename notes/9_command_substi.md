@@ -6,7 +6,7 @@ Allows the output of a command to be used as input in another command. It enable
 
 There are two ways to perform command substitution:
 
-1. **Backticks (` `` `)** (Old-style)
+1. **Backticks (` `` `)** (Old-style)\*\*
    ```bash
    output=`command`
    ```
