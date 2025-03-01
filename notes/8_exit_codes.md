@@ -1,20 +1,17 @@
-# Exit Codes in Bash Scripting
+## What is an Exit Code?
 
-## 1. What is an Exit Code?
-
-An **exit code** (also called an **exit status**) is a numeric value returned by a command or script to indicate its execution status.
+An **exit code** (**exit status**) is a numeric value returned by a command or script to indicate its execution status.
 
 - A **successful** command returns `0`.
 - A **failure** returns a **non-zero** value (1-255).
 
-## 2. Checking Exit Codes
+## Checking Exit Codes
 
 The special variable **`$?`** holds the exit status of the last executed command.
 
 ### Example:
 
 ```bash
-#!/bin/bash
 ls /nonexistent_directory
 echo "Exit code: $?"
 ```
@@ -50,7 +47,7 @@ You can manually set an exit code using `exit <code>`.
 
 ```bash
 #!/bin/bash
-echo "Script is running..."
+echo "Script doing something"
 exit 5
 ```
 
@@ -61,20 +58,14 @@ exit 5
 echo $?
 ```
 
-**Output:**
+## Using Exit Codes in Conditional Statements
 
-```
-Script is running...
-5
-```
-
-## 5. Using Exit Codes in Conditional Statements
-
-### Example: Handling Errors
+### Ex: Handling Errors
 
 ```bash
 #!/bin/bash
 mkdir /root/test_directory 2>/dev/null
+
 if [ $? -ne 0 ]; then
     echo "Failed to create directory. Permission denied."
     exit 1
@@ -82,7 +73,7 @@ fi
 echo "Directory created successfully."
 ```
 
-## 6. `set -e` for Automatic Exit on Error
+## `set -e` for Automatic Exit on Error
 
 The `set -e` option makes a script **exit immediately** if any command fails.
 
@@ -119,14 +110,7 @@ touch temp.txt
 exit 0  # Script exits here, triggering the trap
 ```
 
-**Output:**
-
-```
-Creating temp.txt...
-Cleaning up before exit
-```
-
-## 8. Summary
+## Summary
 
 - **Exit codes indicate success (`0`) or failure (`non-zero`).**
 - **Use `$?` to check the last command’s exit status.**

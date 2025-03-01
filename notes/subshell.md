@@ -1,8 +1,8 @@
-## 1. What is a Subshell?
+## What is a Subshell?
 
 A **subshell** is a separate child process spawned by the parent shell. It allows executing commands in an isolated environment without affecting the parent shell.
 
-## 2. How to Create a Subshell
+## How to Create a Subshell
 
 Subshells are created using **parentheses `()`**.
 
@@ -37,7 +37,7 @@ Subshell variable outside:
 
 > The variable `subshell_var` is only available inside the subshell.
 
-## 3. Differences Between a Subshell and a Parent Shell
+## Differences Between a Subshell and a Parent Shell
 
 | Feature              | Parent Shell      | Subshell                           |
 | -------------------- | ----------------- | ---------------------------------- |
@@ -46,7 +46,7 @@ Subshell variable outside:
 | Affects Parent?      | Yes               | No                                 |
 | Execution Scope      | Global            | Local                              |
 
-## 4. When to Use a Subshell
+## When to Use a Subshell
 
 - To **isolate** commands and avoid modifying the parent environment.
 - To **group** commands without affecting the current shell.
