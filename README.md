@@ -7,7 +7,8 @@ Markdown files can be easily viewed in several ways. Below are some simple optio
 ### 1️. **Using a Web Browser**
 
 - **GitHub**: Simply view the `.md` on GitHub - shows you the preview
-- **VS Code**
+  
+### 2. **VS Code**
   - Open the `.md` file in VS Code, then click **View > Open Preview**.
   - Open the .md file in Visual Studio Code and press `Ctrl + Shift + V` to toggle preview mode.
 
