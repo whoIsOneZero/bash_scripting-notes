@@ -17,6 +17,6 @@ case $user_guess in
 		echo "You have won the 3rd prize!"
 		;;
 		*)
-		print "You loose. /n The winning numbers are: $winning_num1 $winning_num2 $winning_num3"
+		echo -e "You loose.\nThe winning numbers are: $winning_num1 $winning_num2 $winning_num3"
 		;;
 esac
